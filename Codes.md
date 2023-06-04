@@ -13,9 +13,9 @@ two kind -> atomic vectors and lists
 ### create vectors
 <code> c(2.3, 45, 89.7) <code>  #creates double vector
 
-<code> c(13L, 14L, 15L) <code> #creates a vector of integers
-  
-### properties of vectors
+<code> c(13L, 14L, 15L) <code>  #creates a vector of integers
+
+### create vectors
 type, length
 typeof()     #type of the vector 
 length()     #length of the vector
