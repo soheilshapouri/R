@@ -17,7 +17,7 @@ two kind -> atomic vectors and lists
 
 ### create vectors
 type, length
-typeof()     #type of the vector 
+<code> typeof() <code>     #type of the vector 
 length()     #length of the vector
   
   
