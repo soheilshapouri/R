@@ -15,7 +15,7 @@ two kind -> atomic vectors and lists
 
 <code> c(13L, 14L, 15L) <code> #creates a vector of integers
   
-#### properties of vectors
+### properties of vectors
 type, length
 typeof()     #type of the vector 
 length()     #length of the vector
