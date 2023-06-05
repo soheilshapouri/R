@@ -38,5 +38,26 @@ x
 #naming is useful if you want to call a specific element later
 x['a']
 ```  
-## lists
+## Lists
+can have different types of data like integers, lists, etc. 
+```
+list("a", 2, TRUE)
+list(2, "b", list("a", 4))
+
+#choose from list
+x <- list("a", 2, TRUE)
+x[3]  # will retrun TRUE 
+
+#structure of the lists 
+str(x)
+
+#name elements of a list 
+cities <- list("Chicago" = 1, "Newyork" = 2, "Los Angeles" = 3)
+cities[2]
+cities["Newyork"]
+
+
+
+
+
 
