@@ -1,4 +1,4 @@
-# Data Sructures
+# Data Structures
 most common structures: vectors, data frames, matrices, and arrays
 
 vectors: same elements
