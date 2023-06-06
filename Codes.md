@@ -30,10 +30,14 @@ is.double()
 
 length() # length of the vector
 
-#name elements of a vector
+#name elements of a vector, method 1
 x <- c(1,2,3)
 names(x) <- c('a','b','c')
 x 
+
+#name elements of a vector, method 2
+y <- c("a" = 1, "b" = 2, "c"=3)
+
 
 #naming is useful if you want to call a specific element later
 x['a']
