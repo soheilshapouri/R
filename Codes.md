@@ -130,8 +130,18 @@ as.Date(now()) #change it to only date with base
 as_date(now()) #change it to only date with lubridate 
 ```
 
-
-
-
+# Logical Operators
+& and   
+| or   
+! NOT  
+```  
+TRUE & TRUE     #returns TRUE   
+TRUE & FALSE    #returns FALSE  
+FALSE & FALSE   #returns FALSE  
+  
+TRUE | TRUE  #returns TRUE  
+TRUE | FALSE #returns TRUE  
+FALSE| FALSE #retruns FALSE  
+```
 
 
