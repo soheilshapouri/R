@@ -147,6 +147,11 @@ FALSE| FALSE #retruns FALSE
 # zero means FALSE, non-zero menas TRUE  
 x= 1 # x is TRUE cause it is non-zero  
 !x   # NOT TRUE so retruns false   
+  
+airquality[airquality$Solar.R >150 & airquality$Wind > 10,]  
+# the opposite should have | instead of &   
+airquality[!(airquality$Solar.R >150 | airquality$Wind > 10),]  
 ```
+
 
 
