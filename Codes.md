@@ -1,3 +1,21 @@
+# Files and Folders
+```
+# creating new folder
+dir.create("averynewfolder") 
+
+# create new files 
+file.create("soso.txt")
+
+file.create("soso.docx")
+
+file.create("sos.csv")
+
+#delete files 
+unlink("soso.docx")
+
+
+```
+
 # Data Structures
 most common structures: vectors, lists, data frames, matrices, and arrays
 
