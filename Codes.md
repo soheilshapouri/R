@@ -81,8 +81,15 @@ cities["Newyork"]
 ## DataFrames
 ```
 data.frame(x=c(1,2,3), y = c("a", "b", "a"))
+```
+## Matrices
+```
+matrix(nrow = 2, ncol = 2)
+matrix(c(3:8), nrow = 2)
+matrix(c(3:8), ncol = 2)
 
 ```
+
 
 ## Time and Date 
 time and date data in R has three different formats:  
