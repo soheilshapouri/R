@@ -70,6 +70,19 @@ daye-time: 2018-03-31 18:15:48 UTC
 
 ```
 library(lubridate)
+
+# to get the time
+today() 
+date()
+timestamp()
+now()
+
+# convert strings to dates and time
+x <- "2021-01-20" 
+typeof(x)         #x is a string
+x <- ymd(x)
+typeof(x)         #retruns double 
+
 ```
 
 
