@@ -59,6 +59,18 @@ str(x)
 cities <- list("Chicago" = 1, "Newyork" = 2, "Los Angeles" = 3)
 cities[2]
 cities["Newyork"]
+```
+
+## Time and Date 
+time and date data in R has three different formats:  
+date, time, and date-time  
+date: 2016-08-16  
+time: 20:11:59 UTC  
+daye-time: 2018-03-31 18:15:48 UTC  
+
+```
+library(lubridate)
+```
 
 
 
