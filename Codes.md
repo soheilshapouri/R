@@ -91,7 +91,7 @@ matrix(c(3:8), ncol = 2)
 ```
 
 
-## Time and Date 
+# Time and Date 
 time and date data in R has three different formats:  
 date, time, and date-time  
 date: 2016-08-16  
