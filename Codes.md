@@ -83,6 +83,21 @@ typeof(x)         #x is a string
 x <- ymd(x)
 typeof(x)         #retruns double 
 
+x <- "2021-20-01"
+ydm(x)
+
+x <- 19850923
+ymd(x) # will return date in yy, mm, dd format 
+
+x <- "2021-01-20 20:11:59"
+ymd_hms(x)
+
+x <-"2023, 04, 13, 12:45"
+ymd_hm(x)
+
+now() #returns date_time
+as.Date(now()) #change it to only date with base 
+as_date(now()) #change it to only date with lubridate 
 ```
 
 
