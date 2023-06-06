@@ -1,5 +1,5 @@
 # Data Structures
-most common structures: vectors, data frames, matrices, and arrays
+most common structures: vectors, lists, data frames, matrices, and arrays
 
 vectors: same elements
 lists: different types of elements
@@ -59,6 +59,11 @@ str(x)
 cities <- list("Chicago" = 1, "Newyork" = 2, "Los Angeles" = 3)
 cities[2]
 cities["Newyork"]
+```
+## DataFrames
+```
+data.frame(x=c(1,2,3), y = c("a", "b", "a"))
+
 ```
 
 ## Time and Date 
