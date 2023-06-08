@@ -162,4 +162,23 @@ install.packages()
 browseVignettes("ggplot2")
 ```
 
+# Nested functions vs. Pipes
+```
+filtered_tg <- filter(ToothGrowth, dose == 0.5)
+arrange(filtered_tg, len)
 
+# nested functions
+arrange(filter(ToothGrowth, dose ==0.5),len)
+
+# pipes
+ToothGrowth %>% 
+  filter(dose== 0.5) %>% 
+  arrange(len)
+```
+# Tidyverse
+```
+ToothGrowth %>% 
+  filter(dose == 0.5) %>% 
+  group_by(supp) %>% 
+  summarise(mean_len = mean(len, na.rm = T))
+```
