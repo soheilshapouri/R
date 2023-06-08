@@ -152,6 +152,14 @@ airquality[airquality$Solar.R >150 & airquality$Wind > 10,]
 # the opposite should have | instead of &   
 airquality[!(airquality$Solar.R >150 | airquality$Wind > 10),]  
 ```
+# Packages
+```
+# update packages
+tidyverse_update()
+install.packages()
 
+# tolearn about a package
+browseVignettes("ggplot2")
+```
 
 
