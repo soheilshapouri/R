@@ -1,3 +1,8 @@
+# Sources to get data
+- Journal of Statistics Education Data Archive https://jse.amstat.org/jse_data_archive.htm  
+each dataset is accompanied by a peer-review paper
+
+
 # Files and Folders
 ```
 # creating new folder
