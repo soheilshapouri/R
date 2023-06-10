@@ -2,8 +2,35 @@
 - Journal of Statistics Education Data Archive https://jse.amstat.org/jse_data_archive.htm  
 each dataset is accompanied by a peer-review paper
 - R datasets pakcage   
+```
 data() # explanations and example codes: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html
+```
 
+# Data Import
+```
+# read csv files 
+library(readr) 
+readr_example() #sample datasets from readr package 
+read_csv(readr_example("chickens.csv"))
+
+# read excel files
+library(readxl)
+readxl_example() #sample xls and xlsx files
+
+read_excel(readxl_example("datasets.xls"))
+read_excel(readxl_example("type-me.xlsx"))
+
+# to get the list of sheets in excel files 
+excel_sheets(readxl_example("type-me.xlsx"))
+
+# to read a particular sheet by number 
+read_excel(readxl_example("type-me.xlsx"), sheet = 1)
+
+# to read a particular sheet by its name 
+read_excel(readxl_example("type-me.xlsx"), sheet = "date_coercion")
+
+
+```
   
 # Files and Folders
 ```
