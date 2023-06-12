@@ -32,12 +32,27 @@ read_excel(readxl_example("type-me.xlsx"), sheet = "date_coercion")
 # Data Inspection
 ```
 View()
-summary(penguins)
-head()
 glimpse()
 skim_without_charts(penguins)
 ```
+# Data Cleaning
+```
+colnames(penguins)
 
+# select columns
+mtcars %>% 
+  select(-mpg)
+ 
+subset(penguins, select = c("species"))
+
+# rename columns
+df %>% 
+  rename(new_name = old_name)
+  
+rename_with(penguins,toupper) # make all columns uppercase
+rename_with(penguins,tolower) # make all columns lowercase
+
+```
 
 
 
