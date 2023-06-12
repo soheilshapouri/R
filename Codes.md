@@ -28,10 +28,19 @@ read_excel(readxl_example("type-me.xlsx"), sheet = 1)
 
 # to read a particular sheet by its name 
 read_excel(readxl_example("type-me.xlsx"), sheet = "date_coercion")
-
-
 ```
-  
+# Data Inspection
+```
+View()
+summary(penguins)
+head()
+glimpse()
+skim_without_charts(penguins)
+```
+
+
+
+
 # Files and Folders
 ```
 # creating new folder
