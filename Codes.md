@@ -42,6 +42,9 @@ colnames(penguins)
 # select columns
 mtcars %>% 
   select(-mpg)
+
+penguins %>% 
+  filter(species == "Adelie")
  
 subset(penguins, select = c("species"))
 
@@ -52,8 +55,30 @@ df %>%
 rename_with(penguins,toupper) # make all columns uppercase
 rename_with(penguins,tolower) # make all columns lowercase
 
-```
+# arrange 
+penguins %>% 
+  arrange(bill_length_mm)
 
+penguins %>% 
+  arrange(desc(bill_length_mm))
+
+penguins %>% 
+  arrange(-bill_length_mm)
+  
+# grouping 
+penguins %>% 
+  group_by(island) %>% 
+  drop_na() %>% 
+  summarise(mean = mean(bill_length_mm))
+
+penguins %>% 
+  group_by(species, island) %>% 
+  drop_na() %>% 
+  summarise(min(bill_length_mm),
+            max(bill_length_mm))
+            
+
+```
 
 
 # Files and Folders
