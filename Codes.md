@@ -76,7 +76,23 @@ penguins %>%
   drop_na() %>% 
   summarise(min(bill_length_mm),
             max(bill_length_mm))
-            
+ 
+ # combine columns
+ bookings_df %>%
+  select(arrival_date_year, arrival_date_month) %>% 
+  unite(arrival_month_year, c(arrival_date_month, arrival_date_year), sep = " ")
+
+# cobmine columns and change the format to data
+cleaned <- bookings_df %>% 
+  select(arrival_date_year, arrival_date_month, arrival_date_day_of_month) %>% 
+  unite(new_date, c(arrival_date_year, arrival_date_month,arrival_date_day_of_month), sep = " ") %>% 
+  mutate(new_date = ymd(new_date))
+
+# make a new column
+bookings_df %>%
+  mutate(guests = adults + children + babies)
+
+
 
 ```
 
