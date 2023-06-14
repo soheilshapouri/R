@@ -92,6 +92,17 @@ cleaned <- bookings_df %>%
 bookings_df %>%
   mutate(guests = adults + children + babies)
 
+penguins %>% 
+  mutate(body_mass_kg = body_mass_g/1000,
+         flipper_length_m = flipper_length_mm/1000)
+ 
+  
+# separate a column into two columns
+separate(employee, name, into = c("first_name", "last_name"), sep = " ")
+
+# join columns
+unite(employee, "name", first_name, last_name, sep = " ")
+
 
 
 ```
