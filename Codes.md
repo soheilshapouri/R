@@ -308,3 +308,5 @@ ToothGrowth %>%
   group_by(supp) %>% 
   summarise(mean_len = mean(len, na.rm = T))
 ```
+# Journals
+Quantitative Methods for Psychology https://www.tqmp.org/ 
