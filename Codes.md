@@ -103,9 +103,25 @@ separate(employee, name, into = c("first_name", "last_name"), sep = " ")
 # join columns
 unite(employee, "name", first_name, last_name, sep = " ")
 
+```
+# Bias data
+```
+# this example shows that four different sets of data can have similar mean, sd, and correlation but very different shapes
+library(Tmisc)
+View(quartet)
 
+quartet %>% 
+  group_by(set) %>% 
+  summarise(mean(x), sd(x), mean(y), sd(y), cor(x,y))
+
+ggplot(quartet, aes(x,y))+
+  geom_point()+
+  geom_smooth(method = lm)+
+  facet_wrap(~set)
 
 ```
+
+
 
 
 # Files and Folders
