@@ -1,9 +1,12 @@
 # Sources to get data
 - Journal of Statistics Education Data Archive https://jse.amstat.org/jse_data_archive.htm  
 each dataset is accompanied by a peer-review paper
-- R datasets pakcage   
+- R datasets pakcage  
+   explanations and example codes: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html
+- Data in Brief   
+hotel bookings:https://www.sciencedirect.com/science/article/pii/S2352340918315191
 ```
-data() # explanations and example codes: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html
+data() # R built-in datasets
 ```
 
 # Data Import
