@@ -313,3 +313,9 @@ Quantitative Methods for Psychology https://www.tqmp.org/
 
 # Theoritical Issues
 Data Science Ethics: https://datasciencebox.org/02-ethics.html
+
+
+    
+# Data Visualization
+choose the appropriate type of graph: https://www.data-to-viz.com/
+
