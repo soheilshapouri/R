@@ -334,3 +334,11 @@ ggplot(penguins)+
   
 # if you don't want to map variables to aesthetics, put them outside aes()
 ```
+### smoothing
+if less than 1000 points, use method = "leoss"
+if more than 1000, use method = "gam" (generalized additive models)  
+learn more abouth smoothing here: http://statseducation.com/Introduction-to-R/modules/graphics/smoothing/
+```
+ggplot()+
+  geom_smooth(method = "loess")
+```
