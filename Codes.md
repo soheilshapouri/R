@@ -321,4 +321,16 @@ Data Science Ethics: https://datasciencebox.org/02-ethics.html
     
 # Data Visualization
 choose the appropriate type of graph: https://www.data-to-viz.com/
-
+```
+ggplot(data = penguins)+
+  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+  
+# add more aesthetics 
+ggplot(penguins)+
+  geom_point(mapping = aes(x = flipper_length_mm,y = body_mass_g,
+                           color = species, shape = species,
+                           size = species))
+# if there are a lot of data points which overlap, use geom_jitter instead of geom_point()
+  
+# if you don't want to map variables to aesthetics, put them outside aes()
+```
