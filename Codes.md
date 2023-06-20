@@ -333,6 +333,28 @@ ggplot(penguins)+
 # if there are a lot of data points which overlap, use geom_jitter instead of geom_point()
   
 # if you don't want to map variables to aesthetics, put them outside aes()
+
+# typically we use facet_wrap() for one variable
+ggplot(penguins)+
+  geom_point(aes(flipper_length_mm,body_mass_g, color = species))+
+  facet_wrap(~species)
+
+# we might use facet_grid() for two variables
+ggplot(penguins)+
+  geom_point(aes(flipper_length_mm,body_mass_g, color = species))+
+  facet_grid(sex~species)
+
+# adjust the text of the plot 
+ggplot(hotel_bookings)+
+  geom_bar(mapping = aes(x =distribution_channel))+
+  facet_wrap(~deposit_type)+
+  theme(axis.text.x = element_text(size = 6, angle = 45))
+
+# facet_wrap() with two variables is possible #categorical variables
+ggplot(penguins)+
+  geom_bar(aes(year))+
+  facet_wrap(~sex~island)
+
 ```
 ### smoothing
 if less than 1000 points, use method = "leoss"
