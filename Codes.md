@@ -354,7 +354,32 @@ ggplot(hotel_bookings)+
 ggplot(penguins)+
   geom_bar(aes(year))+
   facet_wrap(~sex~island)
+```
+### Labels, titles, annotations
+```
+#add labels, center the title
+ggplot(penguins)+
+  geom_point(aes(flipper_length_mm, body_mass_g))+
+  labs(title = "Body mass vs. Flipper length")+
+  theme(plot.title = element_text(hjust = 0.5))
 
+# add subtitle and caption
+ggplot(penguins)+
+  geom_point(aes(flipper_length_mm, body_mass_g))+
+  labs(title = "Body mass vs. Flipper length",
+       subtitle = "Smaple of Three species",
+       caption = "data collected by Dr. Gorman")
+
+# add anootations
+ggplot(penguins)+
+  geom_point(aes(flipper_length_mm, body_mass_g,
+                 color = species))+
+  annotate("text", x = 200, y = 6000,
+           label = "Gentoo are largest",
+           color ="purple",
+           fontface = "italic",
+           size = 7)
+# more on anotations: https://ggplot2.tidyverse.org/reference/annotate.html
 ```
 ### smoothing
 if less than 1000 points, use method = "leoss"
