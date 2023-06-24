@@ -389,3 +389,13 @@ learn more abouth smoothing here: http://statseducation.com/Introduction-to-R/mo
 ggplot()+
   geom_smooth(method = "loess")
 ```
+### Save Visualization
+```
+#saves the last plot created by ggplot()
+ggsave("penguinsphoto.png")
+
+# open an R graphic device, then plot sth, then dev.off
+png("mtcars.png")
+plot(mtcars$mpg, mtcars$cyl)
+dev.off()
+```
