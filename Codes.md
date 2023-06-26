@@ -380,6 +380,18 @@ ggplot(penguins)+
            fontface = "italic",
            size = 7)
 # more on anotations: https://ggplot2.tidyverse.org/reference/annotate.html
+
+mindate = min(hotel_bookings$arrival_date_year)
+maxdate = max(hotel_bookings$arrival_date_year)
+ggplot(hotel_bookings)+
+  geom_bar(mapping = aes(x = market_segment))+
+  facet_wrap(~hotel)+
+  labs(title = "Hotels", 
+       caption = paste0("data from ", mindate, " to ", maxdate),
+       x = "Market Segment",
+       y = "number of bookings")+
+  theme(axis.text.x = element_text(angle = 45))
+  
 ```
 ### smoothing
 if less than 1000 points, use method = "leoss"
