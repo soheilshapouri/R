@@ -1,3 +1,4 @@
+# A Summery of Codes for <img src="https://www.r-project.org/logo/Rlogo.png" alt="R Logo" width="50">  &  <img src="https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png" alt="R Studio Logo" width="100">  
 # Sources to get data
 - [Journal of Statistics Education Data Archive](https://jse.amstat.org/jse_data_archive.htm)  
 each dataset is accompanied by a peer-review paper
