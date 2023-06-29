@@ -1,5 +1,5 @@
 # Sources to get data
-- Journal of Statistics Education Data Archive https://jse.amstat.org/jse_data_archive.htm  
+- [Journal of Statistics Education Data Archive](https://jse.amstat.org/jse_data_archive.htm)  
 each dataset is accompanied by a peer-review paper
 - R datasets pakcage  
    explanations and example codes: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html
@@ -411,3 +411,7 @@ png("mtcars.png")
 plot(mtcars$mpg, mtcars$cyl)
 dev.off()
 ```
+# R Markdown
+In R Studio you can switch to Visual mode (instead of source mode) to have a visual editor instead of writing markdown syntax
+
+
