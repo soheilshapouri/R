@@ -32,8 +32,11 @@ read_excel(readxl_example("type-me.xlsx"), sheet = 1)
 # to read a particular sheet by its name 
 read_excel(readxl_example("type-me.xlsx"), sheet = "date_coercion")
 ```
+
 If you have just started coding, remember this:  
-!(https://twitter.com/strongminded101/status/1543567196034441216/photo/1)
+![Twitter Image](https://pbs.twimg.com/media/FWvYtWcUsAAWqrt?format=jpg&name=900x900)
+
+
 # Data Inspection
 ```
 View()
