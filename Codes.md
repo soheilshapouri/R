@@ -152,7 +152,12 @@ unlink("soso.docx")
 ```
 
 # Data Structures
-most common structures: vectors, lists, data frames, matrices, and arrays
+most common structures: 
+* vectors,
+*  lists,
+*  data frames,
+*  matrices,
+*  arrays
 
 vectors: same elements
 lists: different types of elements
