@@ -2,10 +2,10 @@
 # Sources to get data
 - [Journal of Statistics Education Data Archive](https://jse.amstat.org/jse_data_archive.htm)  
 each dataset is accompanied by a peer-review paper
-- R datasets pakcage  
-   explanations and example codes: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html
-- Data in Brief   
-hotel bookings:https://www.sciencedirect.com/science/article/pii/S2352340918315191
+- [R datasets pakcage documentation]()  
+   includes datasets descriptions and sample simple codes
+- [Data in Brief](https://www.sciencedirect.com/journal/data-in-brief)   
+open access journal 
 ```
 data() # R built-in datasets
 ```
